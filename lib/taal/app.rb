@@ -5,7 +5,7 @@ module Taal
     use Rack::NestedParams
 
     get "/" do
-      { info: "SimpleBuilder #{Taal::VERSION}" }.to_json
+      { info: "Taal #{Taal::VERSION}" }.to_json
     end
 
     get "/builds" do
@@ -16,7 +16,7 @@ module Taal
     post "/builds" do
       build = Build.new(params["build"])
       if build.save
-        QC.enqueue("SimpleBuilder::BuildJob.run", build.id)
+        QC.enqueue("Taal::BuildJob.run", build.id)
         halt 201, build.to_json
       else
         halt 400, { error: "bad request" }.to_json
