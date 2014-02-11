@@ -1,0 +1,39 @@
+GIT
+  remote: git://github.com/guilleiguaran/nancy.git
+  revision: cdf475539d47d187433980a57b0f52d89f39ed36
+  specs:
+    nancy (0.4.0)
+      rack
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    aws-s3 (0.6.3)
+      builder
+      mime-types
+      xml-simple
+    builder (3.2.2)
+    mime-types (2.0)
+    pg (0.17.1)
+    puma (2.7.1)
+      rack (>= 1.1, < 2.0)
+    queue_classic (2.2.3)
+      pg (~> 0.17.0)
+    rack (1.5.2)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
+    rake (10.1.1)
+    sequel (4.7.0)
+    xml-simple (1.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  aws-s3
+  nancy!
+  puma
+  queue_classic
+  rack-contrib
+  rake
+  sequel
