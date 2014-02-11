@@ -1,4 +1,4 @@
-module SimpleBuilder
+module Taal
   class Build < Sequel::Model
     plugin :timestamps
     plugin :json_serializer

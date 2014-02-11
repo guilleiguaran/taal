@@ -1,4 +1,4 @@
-module SimpleBuilder
+module Taal
   class BuildJob
     def self.run(build_id)
       build = Build[build_id]

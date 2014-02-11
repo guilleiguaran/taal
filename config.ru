@@ -1,4 +1,4 @@
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "lib"))
-require "simple_builder"
+require "taal"
 
-run SimpleBuilder::App.new
+run Taal::App.new

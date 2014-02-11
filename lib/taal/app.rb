@@ -1,11 +1,11 @@
-module SimpleBuilder
+module Taal
   class App < Nancy::Base
     use Rack::Logger
     use Rack::PostBodyContentTypeParser
     use Rack::NestedParams
 
     get "/" do
-      { info: "SimpleBuilder #{SimpleBuilder::VERSION}" }.to_json
+      { info: "SimpleBuilder #{Taal::VERSION}" }.to_json
     end
 
     get "/builds" do
