@@ -22,7 +22,7 @@ module Taal
       url = upload(compressed_file)
 
       # Save url in build
-      build.update(url: url)
+      build.update(url: url, status: 'finished')
 
       # Delete temp working dir
       FileUtils.rm_rf(tmpdir)
