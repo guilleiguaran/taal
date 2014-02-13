@@ -27,9 +27,9 @@ Setup database and queue:
 
 Queue a new build task on server
 
-    curl -X POST -H "Content-Type: application/json" -d '{"build":{"script":"https://gist.github.com/guilleiguaran/8936760/raw/c6e47f64fe59b2c447c28624cd8b0044812112f0/gnugo.sh"}}' http://taal-builder.herokuapp.com/builds
+    curl -X POST -H "Content-Type: application/json" -d '{"build":{"script":"https://gist.github.com/guilleiguaran/8936760/raw/4a8257f2b15ea967abfd41380c93c84d3da3ad99/gnugo.sh"}}' http://taal-builder.herokuapp.com/builds
 
-You can check the GNU Go example building script [here](https://gist.github.com/guilleiguaran/8936760/raw/c6e47f64fe59b2c447c28624cd8b0044812112f0/gnugo.sh)
+You can check the GNU Go example building script [here](https://gist.github.com/guilleiguaran/8936760/raw/4a8257f2b15ea967abfd41380c93c84d3da3ad99/gnugo.sh)
 
 Check the status of a existing build on server
 
