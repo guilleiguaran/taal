@@ -1,7 +1,5 @@
-require 'bundler/setup'
-require 'queue_classic'
+require './environment'
 require 'queue_classic/tasks'
-require 'sequel'
 require 'sequel/extensions/migration'
 
 namespace :db do

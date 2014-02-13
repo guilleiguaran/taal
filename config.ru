@@ -1,4 +1,3 @@
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "lib"))
-require "taal"
+require "./environment"
 
 run Taal::App.new
